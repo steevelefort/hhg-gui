@@ -17,6 +17,7 @@ NOT FINISHED YET.
 ```sh
 git clone https://github.com/steevelefort/hhg-gui.git
 cd hhg-gui
+neu update
 cd hhkb-react
 npm install
 npm run build
