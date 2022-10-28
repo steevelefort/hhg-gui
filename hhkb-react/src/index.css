@@ -1,0 +1,245 @@
+:root {
+  --green: #5a9;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 1vw;
+}
+
+body {
+  background-color: #ccc;
+  margin: 0;
+}
+.App {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+header {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+h1 {
+  /*flex-grow: 1;*/
+  margin: 0;
+  text-align: left;
+}
+main {
+  padding: 0 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.hhkb {
+  background-color: #222;
+  border-radius: 0.75vw;   
+  padding: 2.5vw 0.7vw 1vw 0.7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 7px 7px 15px #444;
+}
+
+.keyboard {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  color: #fff;
+  line-height:1.2rem;
+}
+
+.key {
+  background-color: #000;
+  height: calc(100vw / 15);
+  padding: 0.3%;
+}
+
+.keytop {
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(51,51,51,1) 100%);
+  border-bottom: 1.8vw solid #171717;
+  border-left: 0.8vw solid #333;
+  border-right: 0.8vw solid #111;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+.keytop.uncommited {
+  background: linear-gradient(90deg, rgba(44,17,17,1) 0%, rgba(91,51,51,1) 100%);
+  border-bottom: 1.8vw solid #471717;
+  border-left: 0.8vw solid #833;
+  border-right: 0.8vw solid #411;
+}
+
+.drag-over {
+  filter: brightness(2);
+}
+
+.spaceKey {
+  background: #222;
+}
+
+.shifted {
+    color: #aaa;
+    font-size: 0.8rem;
+    margin-left: -0.4rem;
+}
+.print {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.code {
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 0.4rem;
+}
+
+.info-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.switch {
+  display: flex;
+  border-radius: 1rem;
+  border: solid 4px #555;
+  width: 3.5rem;
+  height:2rem;
+  align-items: center;
+  padding: 0.1rem;
+  background-color: #faa;
+  justify-content: flex-start;
+}
+
+.switch-group {
+  display: flex;
+  align-items:center;
+}
+.switch-group label {
+  margin-right: .3rem;
+}
+.switch .toggle{
+  border-radius: 50%;
+  background-color: #a00;
+  border: solid #700 0.2rem;
+  width:1.5rem;
+  height:1.5rem;
+}
+
+.switch.on {
+  background-color: #afa;
+  justify-content:flex-end;
+}
+
+.switch .toggle.on{
+  background-color: #0a0;
+  border: solid #070 0.2rem;
+}
+
+.scancodes-block {
+  margin: 1rem 0;
+}
+.scancodes {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #aaa;
+}
+
+.scancode {
+  background-color: #ddd;
+  border: #777 solid 1px;
+  border-radius: 5px;
+  margin: 0.3rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+}
+.tab {
+  padding: 1rem;
+  background-color: #777;
+  border-radius: .4rem .4rem 0 0;
+  margin-right: .1rem;
+  cursor: pointer;
+}
+.tab.active {
+  background-color: #aaa;
+}
+
+.nohhkb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.btn {
+  background-color: var(--green);
+  padding: .2rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn.uncommited {
+  background-color: #d10;
+}
+
+.output {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.output>.window {
+  background-color: #ccc;
+  min-width: 50%;
+  border-radius: 7px;
+  padding: 2rem;
+}
+.output h2 {
+  margin: 0;
+}
+.output .btn {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+.output .progress-bar {
+  margin: 1rem;
+  border: 3px solid #111;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.output .progress {
+  height: 4rem;
+  background-color: var(--green);
+}
+.output .messages{
+  /*list-style: none;*/
+  max-height: 50vh;
+  overflow-y: scroll;
+  text-align: left;
+}
