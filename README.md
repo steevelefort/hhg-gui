@@ -36,6 +36,12 @@ You could :
 **IT IS EXPERIMENTAL. USE IT AT YOUR OWN RISK.**  
 Beware, you can remap all keys and you could remove some standard shortcuts (change source, etc.)
 
+## Roadmap
+
+- The `hhkb-react/src/scancodes.js` file need to be modified/corrected to show all existing keys.
+- A white theme have to be created (with CSS refactoring)
+- Code need to be cleaned
+
 ## Licence
 
 This software is released under the MIT.  
