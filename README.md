@@ -9,7 +9,7 @@ NOT FINISHED YET.
 
 ## Requirements
 
-- Node.JS
+- Node.JS (at least v16)
 - Neutralino.JS : `npm install -g @neutralinojs/neu`
 
 ## How to compile
@@ -25,6 +25,11 @@ cd ..
 neu build --release
 ```
 Builds are now in the dist folder.
+
+Builds were successfully made on 
+
+- **Fedora** (36) 
+- **OpenSuse Tumbleweed**.
 
 ## Usage
 
