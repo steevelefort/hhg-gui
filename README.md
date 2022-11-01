@@ -1,7 +1,7 @@
 # HHG FRONTEND
 
 This is a gui for "hhg" tool ( [https://gitlab.com/dom/happy-hacking-gnu](https://gitlab.com/dom/happy-hacking-gnu)).  
-You can remap your HHKB (Happy Hacking Keyboard) Hybrid under Linux.
+You can remap your HHKB (Happy Hacking Keyboard) Hybrid **ANSI** under Linux.
 
 NOT FINISHED YET.  
 
