@@ -10,25 +10,21 @@ NOT FINISHED YET.
 ## Requirements
 
 - Node.JS (at least v16)
-- Neutralino.JS : `npm install -g @neutralinojs/neu`
+- webkit2gtk4.0
 
 ## How to compile
 
 ```sh
 git clone https://github.com/steevelefort/hhg-gui.git
 cd hhg-gui
-neu update
-cd hhkb-react
-npm install
-npm run build
-cd ..
-neu build --release
+chmod +x build.sh
+./build.sh
 ```
 Builds are now in the dist folder.
 
 Builds were successfully made on 
 
-- **Fedora** (36) 
+- **Fedora** (39) 
 - **OpenSuse Tumbleweed**.
 
 ## Usage
